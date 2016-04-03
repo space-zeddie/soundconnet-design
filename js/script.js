@@ -3,6 +3,12 @@
  */
 $(document).ready(function () {
 
+    var a = audiojs;
+    a.events.ready(function() {
+        var a1 = a.createAll();
+    });
+
+
     /* Shows the home div */
     $('#homebtn').click(function (e) {
         e.preventDefault();

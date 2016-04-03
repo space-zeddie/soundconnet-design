@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="/audiojs/audio.min.js"></script>
 </head>
 <body>
 <div class="container-fluid text-center">
@@ -21,9 +22,22 @@
                     </h4>
                 </div>
                 <div id="collapse1" class="panel-collapse collapse in">
-                    <div class="panel-body">Insert player here</div>
-                    <div class="panel-footer scrollfixed" id="member-div">Insert members here
-                       </div>
+                    <div class="panel-body">
+                        <audio controls
+                               data-info-album-art="http://farm5.staticflickr.com/4050/4353986539_ec89b52698_d.jpg"
+                               data-info-album-title="8874"
+                               data-info-artist="Billy Murray"
+                               data-info-title="Come, take a trip in my air-ship"
+                               data-info-label="Edison Gold Moulded Record"
+                               data-info-year="1905"
+                               data-info-att="University of California, Santa Barbara Library."
+                               data-info-att-link="http://cylinders.library.ucsb.edu/search.php?query=8874">
+                            <source src="http://www.lost-letters.com/wp-content/uploads/2013/02/cusb-cyl2985d.ogg" type="audio/ogg" />
+                            <source src="http://www.lost-letters.com/wp-content/uploads/2013/02/cusb-cyl2985d.mp3" type="audio/mpeg" />
+                            <a href="http://www.lost-letters.com/wp-content/uploads/2013/02/cusb-cyl2985d.mp3">cusb_cyl2985d</a>
+                        </audio>
+                    </div>
+                    <div class="panel-footer scrollfixed" id="member-div">Insert members here</div>
                 </div>
             </div>
         </div>
