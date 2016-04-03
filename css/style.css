@@ -11,6 +11,7 @@
 #finddiv, #homediv, #followdiv, #recdiv {
     position: absolute;
     padding: 25px;
+    margin-left: -30px;
     width: 100%;
 }
 
