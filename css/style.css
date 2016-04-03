@@ -4,6 +4,17 @@
     margin: 0 auto;
 }
 
+
+.panel {
+    position: relative;
+    height: 93%;
+}
+
+#member-div {
+    position: absolute;
+    height: 100%;
+}
+
 #homediv {
     margin-left: -30px;
 }
@@ -26,6 +37,10 @@
 .scrollfixed {
     height: 100%;
     overflow: scroll;
+}
+
+#search-results {
+    padding-top: 25px;
 }
 
 footer {
