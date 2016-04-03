@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>SoundConnect</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
@@ -13,12 +13,12 @@
 <body>
 <div class="container-fluid text-center">
     <div class="row content">
-        <div class="col-sm-2 sidenav">
+        <div class="col-sm-3 sidenav" id="left-panel">
             <p><a href="#">Link</a></p>
             <p><a href="#">Link</a></p>
             <p><a href="#">Link</a></p>
         </div>
-        <div class="col-sm-8 text-left">
+        <div class="col-sm-6 text-left" id="centre-panel">
             <div class="container-fluid" id="navbar-container">
                 <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
@@ -44,7 +44,7 @@
                 </div>
             </nav>
             </div>
-            <div id="homediv" class="visiblediv">
+            <div id="homediv" class="visiblediv scrollfixed">
             <h1>Welcome</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nibh lacus, aliquam et faucibus ac, vehicula sit amet odio. Nullam vestibulum ornare efficitur. Donec consectetur, sapien porta sagittis feugiat, mauris est tempor dolor, nec aliquet enim turpis nec augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vel lectus ut neque finibus blandit. Aliquam vel nunc consequat, tincidunt enim sed, consequat risus. Nullam auctor pellentesque turpis, et gravida lectus facilisis ut. Etiam sagittis leo quis magna convallis euismod. Vestibulum aliquet risus tortor, in tincidunt mauris faucibus at. Ut eget pulvinar justo, eget rutrum felis. Aenean dictum augue eget leo vestibulum scelerisque. Cras rhoncus dapibus orci ut imperdiet. Sed in nulla in lorem tincidunt auctor eget eget dui. Donec tempus neque eget leo ullamcorper, a viverra nunc volutpat. Sed cursus ex nec felis faucibus suscipit.
 
@@ -71,18 +71,20 @@
             <h3>Test</h3>
             <p>Lorem ipsum...</p>
         </div>
-            <div id="finddiv" class="hiddendiv">
+            <div id="finddiv" class="hiddendiv scrollfixed">
                 <div class="input-group col-md-12" id="custom-search-input">
                 <input type="text" class="search-query form-control" placeholder="Search" />
                     <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button">
+                        <button class="btn btn-primary" type="button" id="searchbtn">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
                 </div>
             </div>
+            <div id="followdiv" class="hiddendiv scrollfixed"></div>
+            <div id="recdiv" class="hiddendiv scrollfixed"></div>
         </div>
-        <div class="col-sm-2 sidenav">
+        <div class="col-sm-3 sidenav" id="right-panel">
             <div class="well">
                 <p>ADS</p>
             </div>
@@ -92,10 +94,6 @@
         </div>
     </div>
 </div>
-
-<footer class="container-fluid text-center">
-    <p>Footer Text</p>
-</footer>
 
 </body>
 </html>
